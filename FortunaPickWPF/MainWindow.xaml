@@ -203,7 +203,8 @@
                             <materialDesign:PackIcon
                                 Width="32"
                                 Height="32"
-                                Kind="ExitRun" />
+                                Kind="ExitRun"
+                                Foreground="Lime"/>
                         </Button>
                     </ControlTemplate>
                 </TabItem.Template>
