@@ -46,9 +46,9 @@
                             TextWrapping="Wrap" />
                     </StackPanel>
                 </TabItem.Header>
-                <!--<views:LottoView x:Name="LottoView">
+                <views:LottoView x:Name="LottoView"/>
 
-                </views:LottoView>-->
+
             </TabItem>
 
             <TabItem>
@@ -67,7 +67,7 @@
                             TextWrapping="Wrap" />
                     </StackPanel>
                 </TabItem.Header>
-                <!--<views:ThunderView x:Name="ThunderView" />-->
+                <views:ThunderballView x:Name="ThunderballView" />
 
             </TabItem>
 
@@ -87,7 +87,7 @@
                             TextWrapping="Wrap" />
                     </StackPanel>
                 </TabItem.Header>
-                <!--<views:EuroView x:Name="EuroView" />-->
+                <views:EuromillionsView x:Name="EuromillionsView" />
 
             </TabItem>
 
@@ -107,7 +107,7 @@
                             TextWrapping="Wrap" />
                     </StackPanel>
                 </TabItem.Header>
-                <!--<views:SetForLifeView x:Name="SetForLifeView" />-->
+                <views:SetforlifeView x:Name="SetforlifeView" />
 
             </TabItem>
 
@@ -127,7 +127,7 @@
                             TextWrapping="Wrap" />
                     </StackPanel>
                 </TabItem.Header>
-                <!--<views:HistoryView x:Name="HistoryView" />-->
+                <views:DrawhistoryView x:Name="DrawhistoryView" />
 
             </TabItem>
 
@@ -147,7 +147,7 @@
                             TextWrapping="Wrap" />
                     </StackPanel>
                 </TabItem.Header>
-                <!--<views:StatsView x:Name="StatsView" />-->
+                <views:BallstatsView x:Name="BallstatsView" />
 
             </TabItem>
 

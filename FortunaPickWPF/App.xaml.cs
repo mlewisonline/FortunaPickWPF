@@ -35,6 +35,12 @@ namespace FortunaPickWPF
                 services.AddSingleton<MainWindow>();
                 services.AddSingleton<MainViewModel>();
                 services.AddSingleton<AboutViewModel>();
+                services.AddSingleton<BallstatsViewModel>();
+                services.AddSingleton<DrawhistoryViewModel>();
+                services.AddSingleton<EuromillionsViewModel>();
+                services.AddSingleton<LottoViewModel>();
+                services.AddSingleton<SetforlifeViewModel>();
+                services.AddSingleton<ThunderballViewModel>();
             });
     }
 
