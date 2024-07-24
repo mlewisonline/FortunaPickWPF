@@ -2,36 +2,40 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using System.Configuration;
-using System.Data;
 using System.Windows;
 
-namespace FortunaPickWPF;
-
-
-public partial class App : Application
+namespace FortunaPickWPF
 {
-    [STAThread]
-    public static void Main(string[] args)
+    public partial class App : Application
     {
-        using IHost host = CreateHostBuilder(args).Build();
-        host.Start();
+        [STAThread]
+        public static void Main(string[] args)
+        {
+            MainAsync(args).GetAwaiter().GetResult();
+        }
 
-        App app = new();
-        app.InitializeComponent();
-        app.MainWindow = host.Services.GetRequiredService<MainWindow>();
-        app.MainWindow.Visibility = Visibility.Visible;
-        app.Run();
+        private static async Task MainAsync(string[] args)
+        {
+            using IHost host = CreateHostBuilder(args).Build();
+            await host.StartAsync().ConfigureAwait(true);
+            App app = new();
+            app.InitializeComponent();
+            app.MainWindow = host.Services.GetRequiredService<MainWindow>();
+            app.MainWindow.Visibility = Visibility.Visible;
+            app.Run();
+            await host.StopAsync().ConfigureAwait(true);
+        }
+
+        public static IHostBuilder CreateHostBuilder(string[] args) =>
+            Host.CreateDefaultBuilder(args)
+            .ConfigureAppConfiguration((hostBuilderContext, configurationBuilder)
+                => configurationBuilder.AddUserSecrets(typeof(App).Assembly))
+            .ConfigureServices((hostContext, services) =>
+            {
+                services.AddSingleton<MainWindow>();
+                services.AddSingleton<MainViewModel>();
+                services.AddSingleton<AboutViewModel>();
+            });
     }
 
-    public static IHostBuilder CreateHostBuilder(string[] args) =>
-        Host.CreateDefaultBuilder(args)
-        .ConfigureAppConfiguration((hostBuilderContext, configurationBuilder)
-            => configurationBuilder.AddUserSecrets(typeof(App).Assembly))
-        .ConfigureServices((hostContext, services) =>
-        {
-            services.AddSingleton<MainWindow>();
-            services.AddSingleton<MainViewModel>();
-
-        });
 }

@@ -2,18 +2,20 @@
 using CommunityToolkit.Mvvm.Input;
 using System.Windows;
 
-namespace FortunaPickWPF.ViewModels;
-
-public partial class MainViewModel : ObservableObject
+namespace FortunaPickWPF.ViewModels
 {
-    public MainViewModel()
-    {
 
-    }
-
-    [RelayCommand]
-    private void Close()
+    public partial class MainViewModel : ObservableObject
     {
-        Application.Current.Shutdown();
+        public MainViewModel()
+        {
+
+        }
+
+        [RelayCommand]
+        private void Close()
+        {
+            Application.Current.Shutdown();
+        }
     }
 }

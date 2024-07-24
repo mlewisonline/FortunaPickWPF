@@ -1,13 +1,15 @@
 ﻿using FortunaPickWPF.ViewModels;
+using FortunaPickWPF.Views;
+using System.Windows;
 
-namespace FortunaPickWPF;
-
-
-public partial class MainWindow
+namespace FortunaPickWPF
 {
-    public MainWindow(MainViewModel mainViewModel)
+    public partial class MainWindow : Window
     {
-        DataContext = mainViewModel;
-        InitializeComponent();
+        public MainWindow(MainViewModel mainViewModel, AboutViewModel aboutViewModel)
+        {
+            DataContext = mainViewModel;
+            InitializeComponent();
+        }
     }
 }

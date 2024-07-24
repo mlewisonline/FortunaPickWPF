@@ -12,14 +12,11 @@
 
 	<ItemGroup>
 		<ApplicationDefinition Remove="App.xaml" />
-		<None Remove="Resources\icon.ico" />
-		<Content Include="Resources\icon.ico" />
 		<Page Include="App.xaml" />
 	</ItemGroup>
 	
   <ItemGroup>
     <Folder Include="Models\" />
-    <Folder Include="Views\" />
   </ItemGroup>
 
   <ItemGroup>
