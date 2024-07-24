@@ -7,17 +7,18 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>
     <StartupObject>FortunaPickWPF.App</StartupObject>
+    <ApplicationIcon>Resources\icon.ico</ApplicationIcon>
   </PropertyGroup>
 
 	<ItemGroup>
 		<ApplicationDefinition Remove="App.xaml" />
+		<None Remove="Resources\icon.ico" />
+		<Content Include="Resources\icon.ico" />
 		<Page Include="App.xaml" />
 	</ItemGroup>
 	
   <ItemGroup>
     <Folder Include="Models\" />
-    <Folder Include="Resources\" />
-    <Folder Include="ViewModels\" />
     <Folder Include="Views\" />
   </ItemGroup>
 
@@ -26,6 +27,10 @@
     <PackageReference Include="MaterialDesignThemes" Version="5.1.0" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\icon.ico" />
   </ItemGroup>
 
 </Project>

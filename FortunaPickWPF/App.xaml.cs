@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using FortunaPickWPF.ViewModels;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System.Configuration;
@@ -30,6 +31,7 @@ public partial class App : Application
         .ConfigureServices((hostContext, services) =>
         {
             services.AddSingleton<MainWindow>();
- 
+            services.AddSingleton<MainViewModel>();
+
         });
 }
