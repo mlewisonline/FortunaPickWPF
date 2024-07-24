@@ -12,6 +12,13 @@
 
 	<ItemGroup>
 		<ApplicationDefinition Remove="App.xaml" />
+		<None Remove="Resources\ballImgs\Ball.png" />
+		<None Remove="Resources\ballImgs\EuroBall.png" />
+		<None Remove="Resources\ballImgs\LifeBall.png" />
+		<None Remove="Resources\ballImgs\LottoBall.png" />
+		<None Remove="Resources\ballImgs\ThunderBall.png" />
+		<None Remove="Resources\BG.png" />
+		<None Remove="Resources\Logo.png" />
 		<Page Include="App.xaml" />
 	</ItemGroup>
 	
@@ -27,7 +34,14 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Resources\ballImgs\Ball.png" />
+    <Resource Include="Resources\ballImgs\EuroBall.png" />
+    <Resource Include="Resources\ballImgs\LifeBall.png" />
+    <Resource Include="Resources\ballImgs\LottoBall.png" />
+    <Resource Include="Resources\ballImgs\ThunderBall.png" />
+    <Resource Include="Resources\BG.png" />
     <Resource Include="Resources\icon.ico" />
+    <Resource Include="Resources\Logo.png" />
   </ItemGroup>
 
 </Project>

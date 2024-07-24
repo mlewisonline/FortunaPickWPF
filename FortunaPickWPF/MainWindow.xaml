@@ -46,7 +46,11 @@
                             TextWrapping="Wrap" />
                     </StackPanel>
                 </TabItem.Header>
-                <views:LottoView x:Name="LottoView"/>
+                <views:LottoView x:Name="LottoView">
+                    <views:LottoView.Background>
+                        <ImageBrush ImageSource="/Resources/BG.png"/>
+                    </views:LottoView.Background>
+                </views:LottoView>
 
 
             </TabItem>
@@ -67,7 +71,11 @@
                             TextWrapping="Wrap" />
                     </StackPanel>
                 </TabItem.Header>
-                <views:ThunderballView x:Name="ThunderballView" />
+                <views:ThunderballView x:Name="ThunderballView" >
+                    <views:ThunderballView.Background>
+                        <ImageBrush ImageSource="/Resources/BG.png"/>
+                    </views:ThunderballView.Background>
+                </views:ThunderballView>
 
             </TabItem>
 
@@ -87,7 +95,11 @@
                             TextWrapping="Wrap" />
                     </StackPanel>
                 </TabItem.Header>
-                <views:EuromillionsView x:Name="EuromillionsView" />
+                <views:EuromillionsView x:Name="EuromillionsView" >
+                    <views:EuromillionsView.Background>
+                        <ImageBrush ImageSource="/Resources/BG.png"/>
+                    </views:EuromillionsView.Background>
+                </views:EuromillionsView>
 
             </TabItem>
 
@@ -107,7 +119,11 @@
                             TextWrapping="Wrap" />
                     </StackPanel>
                 </TabItem.Header>
-                <views:SetforlifeView x:Name="SetforlifeView" />
+                <views:SetforlifeView x:Name="SetforlifeView" >
+                    <views:SetforlifeView.Background>
+                        <ImageBrush ImageSource="/Resources/BG.png"/>
+                    </views:SetforlifeView.Background>
+                </views:SetforlifeView>
 
             </TabItem>
 
@@ -167,7 +183,11 @@
                             TextWrapping="Wrap" />
                     </StackPanel>
                 </TabItem.Header>
-                <views:AboutView x:Name="AboutView" />
+                <views:AboutView x:Name="AboutView" >
+                    <views:AboutView.Background>
+                        <ImageBrush ImageSource="/Resources/BG.png"/>
+                    </views:AboutView.Background>
+                </views:AboutView>
 
             </TabItem>
 
