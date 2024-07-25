@@ -16,6 +16,7 @@
 
 	<ItemGroup>
 		<ApplicationDefinition Remove="App.xaml" />
+		<None Remove="data\Readme.txt" />
 		<None Remove="Resources\background.png" />
 		<None Remove="Resources\ballImgs\Ball.png" />
 		<None Remove="Resources\ballImgs\EuroBall.png" />
@@ -28,6 +29,9 @@
 		<None Remove="Resources\logos\lottoLogo.png" />
 		<None Remove="Resources\logos\setforlifeLogo.png" />
 		<None Remove="Resources\logos\thunderballLogo.png" />
+		<Content Include="data\Readme.txt">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
 		<Page Include="App.xaml" />
 	</ItemGroup>
 
