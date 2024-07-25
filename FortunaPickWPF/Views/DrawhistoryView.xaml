@@ -9,20 +9,632 @@
     xmlns:viewModels="clr-namespace:FortunaPickWPF.ViewModels"
     d:DataContext="{d:DesignInstance Type=viewModels:DrawhistoryViewModel,
                                      IsDesignTimeCreatable=False}"
-    d:DesignHeight="450"
+    d:DesignHeight="500"
     d:DesignWidth="850"
     mc:Ignorable="d">
-    <StackPanel>
-        <StackPanel Width="280" Height="280">
-            <Image Source="/Resources/Logo.png" />
-        </StackPanel>
-        <TextBlock
-            HorizontalAlignment="Center"
-            VerticalAlignment="Center"
-            FontFamily="Arial Rounded MT Bold"
-            FontSize="30"
-            Foreground="black"
-            Text="COMING SOON" />
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
 
-    </StackPanel>
+
+        <!--  LottoResults  -->
+        <StackPanel
+            Grid.Row="0"
+            Grid.RowSpan="2"
+            Grid.ColumnSpan="2"
+            Margin="10,20,0,0">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*" />
+                    <RowDefinition Height="1*" />
+                    <RowDefinition Height="1*" />
+                </Grid.RowDefinitions>
+                <Image
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="3"
+                    Width="200"
+                    Height="100"
+                    Margin="10,0,0,0"
+                    Source="/Resources/logos/lottoLogo.png" />
+
+                <TextBlock
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="5"
+                    Margin="10,0,0,10"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Center"
+                    FontSize="18"
+                    Text="{Binding LottoDate}" />
+
+                <TextBlock
+                    Grid.Row="1"
+                    Grid.Column="6"
+                    Grid.ColumnSpan="2"
+                    Margin="5,0,0,10"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Center"
+                    FontSize="12"
+                    FontWeight="Bold"
+                    Text="BONUS" />
+                <Image
+                    Grid.Row="2"
+                    Grid.Column="0"
+                    Width="50"
+                    Height="50"
+                    Margin="0,0,0,0"
+                    Source="/Resources/ballImgs/Ball.png" />
+                <TextBlock
+                    Grid.Row="2"
+                    Grid.Column="0"
+                    Margin="0,0,0,0"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    FontSize="24"
+                    Text="{Binding LottoBall1}" />
+                <Image
+                    Grid.Row="2"
+                    Grid.Column="1"
+                    Width="50"
+                    Height="50"
+                    Margin="0,0,0,0"
+                    Source="/Resources/ballImgs/Ball.png" />
+                <TextBlock
+                    Grid.Row="2"
+                    Grid.Column="1"
+                    Margin="0,0,0,0"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    FontSize="24"
+                    Text="{Binding LottoBall2}" />
+                <Image
+                    Grid.Row="2"
+                    Grid.Column="2"
+                    Width="50"
+                    Height="50"
+                    Margin="0,0,0,0"
+                    Source="/Resources/ballImgs/Ball.png" />
+                <TextBlock
+                    Grid.Row="2"
+                    Grid.Column="2"
+                    Margin="0,0,0,0"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    FontSize="24"
+                    Text="{Binding LottoBall3}" />
+                <Image
+                    Grid.Row="2"
+                    Grid.Column="3"
+                    Width="50"
+                    Height="50"
+                    Margin="0,0,0,0"
+                    Source="/Resources/ballImgs/Ball.png" />
+                <TextBlock
+                    Grid.Row="2"
+                    Grid.Column="3"
+                    Margin="0,0,0,0"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    FontSize="24"
+                    Text="{Binding LottoBall4}" />
+                <Image
+                    Grid.Row="2"
+                    Grid.Column="4"
+                    Width="50"
+                    Height="50"
+                    Margin="0,0,0,0"
+                    Source="/Resources/ballImgs/Ball.png" />
+                <TextBlock
+                    Grid.Row="2"
+                    Grid.Column="4"
+                    Margin="0,0,0,0"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    FontSize="24"
+                    Text="{Binding LottoBall5}" />
+                <Image
+                    Grid.Row="2"
+                    Grid.Column="5"
+                    Width="50"
+                    Height="50"
+                    Margin="0,0,0,0"
+                    Source="/Resources/ballImgs/Ball.png" />
+                <TextBlock
+                    Grid.Row="2"
+                    Grid.Column="5"
+                    Margin="0,0,0,0"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    FontSize="24"
+                    Text="{Binding LottoBall6}" />
+                <Image
+                    Grid.Row="2"
+                    Grid.Column="6"
+                    Width="50"
+                    Height="50"
+                    Margin="0,0,0,0"
+                    Source="/Resources/ballImgs/lottoBall.png" />
+                <TextBlock
+                    Grid.Row="2"
+                    Grid.Column="6"
+                    Margin="0,0,0,0"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    FontSize="24"
+                    Text="{Binding LottoBonusBall}" />
+            </Grid>
+        </StackPanel>
+
+
+        <StackPanel
+            Grid.Row="0"
+            Grid.RowSpan="2"
+            Grid.Column="2"
+            Grid.ColumnSpan="2"
+            Margin="10,20,0,0">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*" />
+                    <RowDefinition Height="1*" />
+                    <RowDefinition Height="1*" />
+                </Grid.RowDefinitions>
+                <Image
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="4"
+                    Width="200"
+                    Height="100"
+                    Margin="0,0,0,0"
+                    Source="/Resources/logos/euromillionsLogo.png" />
+
+                <TextBlock
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="5"
+                    Margin="10,0,0,10"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Center"
+                    FontSize="18"
+                    Text="{Binding EuroDate}" />
+
+                <TextBlock
+                    Grid.Row="1"
+                    Grid.Column="5"
+                    Grid.ColumnSpan="2"
+                    Margin="15,0,0,10"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Center"
+                    FontSize="12"
+                    FontWeight="Bold"
+                    Text="LUCKY STARS" />
+                <Image
+                    Grid.Row="2"
+                    Grid.Column="0"
+                    Width="50"
+                    Height="50"
+                    Margin="0,0,0,0"
+                    Source="/Resources/ballImgs/Ball.png" />
+                <TextBlock
+                    Grid.Row="2"
+                    Grid.Column="0"
+                    Margin="0,0,0,0"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    FontSize="24"
+                    Text="{Binding EuroBall1}" />
+                <Image
+                    Grid.Row="2"
+                    Grid.Column="1"
+                    Width="50"
+                    Height="50"
+                    Margin="0,0,0,0"
+                    Source="/Resources/ballImgs/Ball.png" />
+                <TextBlock
+                    Grid.Row="2"
+                    Grid.Column="1"
+                    Margin="0,0,0,0"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    FontSize="24"
+                    Text="{Binding EuroBall2}" />
+                <Image
+                    Grid.Row="2"
+                    Grid.Column="2"
+                    Width="50"
+                    Height="50"
+                    Margin="0,0,0,0"
+                    Source="/Resources/ballImgs/Ball.png" />
+                <TextBlock
+                    Grid.Row="2"
+                    Grid.Column="2"
+                    Margin="0,0,0,0"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    FontSize="24"
+                    Text="{Binding EuroBall3}" />
+                <Image
+                    Grid.Row="2"
+                    Grid.Column="3"
+                    Width="50"
+                    Height="50"
+                    Margin="0,0,0,0"
+                    Source="/Resources/ballImgs/Ball.png" />
+                <TextBlock
+                    Grid.Row="2"
+                    Grid.Column="3"
+                    Margin="0,0,0,0"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    FontSize="24"
+                    Text="{Binding EuroBall4}" />
+                <Image
+                    Grid.Row="2"
+                    Grid.Column="4"
+                    Width="50"
+                    Height="50"
+                    Margin="0,0,0,0"
+                    Source="/Resources/ballImgs/Ball.png" />
+                <TextBlock
+                    Grid.Row="2"
+                    Grid.Column="4"
+                    Margin="0,0,0,0"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    FontSize="24"
+                    Text="{Binding EuroBall5}" />
+                <Image
+                    Grid.Row="2"
+                    Grid.Column="5"
+                    Width="50"
+                    Height="50"
+                    Margin="0,0,0,0"
+                    Source="/Resources/ballImgs/euroBall.png" />
+                <TextBlock
+                    Grid.Row="2"
+                    Grid.Column="5"
+                    Margin="0,0,0,0"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    FontSize="24"
+                    Text="{Binding Star1}" />
+                <Image
+                    Grid.Row="2"
+                    Grid.Column="6"
+                    Width="50"
+                    Height="50"
+                    Margin="0,0,0,0"
+                    Source="/Resources/ballImgs/euroBall.png" />
+                <TextBlock
+                    Grid.Row="2"
+                    Grid.Column="6"
+                    Margin="0,0,0,0"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    FontSize="24"
+                    Text="{Binding Star2}" />
+            </Grid>
+            <TextBlock Margin="10,10,0,0" FontSize="12" Text="UK Millionaire Maker code:" />
+            <TextBlock
+                Margin="10,5,0,0"
+                FontWeight="Bold"
+                Text="{Binding Ticket}"
+                TextWrapping="Wrap" />
+        </StackPanel>
+        <StackPanel
+            Grid.Row="2"
+            Grid.RowSpan="2"
+            Grid.ColumnSpan="2"
+            Margin="10">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*" />
+                    <RowDefinition Height="1*" />
+                    <RowDefinition Height="1*" />
+                </Grid.RowDefinitions>
+                <Image
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="3"
+                    Width="200"
+                    Height="100"
+                    Margin="10,0,0,0"
+                    Source="/Resources/logos/setforlifeLogo.png" />
+
+                <TextBlock
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="5"
+                    Margin="10,0,0,10"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Center"
+                    FontSize="18"
+                    Text="{Binding SetforDate}" />
+
+                <TextBlock
+                    Grid.Row="1"
+                    Grid.Column="5"
+                    Grid.ColumnSpan="1"
+                    Margin="0,0,0,10"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    FontSize="12"
+                    FontWeight="Bold"
+                    Text="LIFEBALL" />
+                <Image
+                    Grid.Row="2"
+                    Grid.Column="0"
+                    Width="50"
+                    Height="50"
+                    Margin="0,0,0,0"
+                    Source="/Resources/ballImgs/Ball.png" />
+                <TextBlock
+                    Grid.Row="2"
+                    Grid.Column="0"
+                    Margin="0,0,0,0"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    FontSize="24"
+                    Text="{Binding LifeBall1}" />
+                <Image
+                    Grid.Row="2"
+                    Grid.Column="1"
+                    Width="50"
+                    Height="50"
+                    Margin="0,0,0,0"
+                    Source="/Resources/ballImgs/Ball.png" />
+                <TextBlock
+                    Grid.Row="2"
+                    Grid.Column="1"
+                    Margin="0,0,0,0"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    FontSize="24"
+                    Text="{Binding LifeBall2}" />
+                <Image
+                    Grid.Row="2"
+                    Grid.Column="2"
+                    Width="50"
+                    Height="50"
+                    Margin="0,0,0,0"
+                    Source="/Resources/ballImgs/Ball.png" />
+                <TextBlock
+                    Grid.Row="2"
+                    Grid.Column="2"
+                    Margin="0,0,0,0"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    FontSize="24"
+                    Text="{Binding LifeBall3}" />
+                <Image
+                    Grid.Row="2"
+                    Grid.Column="3"
+                    Width="50"
+                    Height="50"
+                    Margin="0,0,0,0"
+                    Source="/Resources/ballImgs/Ball.png" />
+                <TextBlock
+                    Grid.Row="2"
+                    Grid.Column="3"
+                    Margin="0,0,0,0"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    FontSize="24"
+                    Text="{Binding LifeBall4}" />
+                <Image
+                    Grid.Row="2"
+                    Grid.Column="4"
+                    Width="50"
+                    Height="50"
+                    Margin="0,0,0,0"
+                    Source="/Resources/ballImgs/Ball.png" />
+                <TextBlock
+                    Grid.Row="2"
+                    Grid.Column="4"
+                    Margin="0,0,0,0"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    FontSize="24"
+                    Text="{Binding LifeBall5}" />
+                
+                <Image
+                    Grid.Row="2"
+                    Grid.Column="5"
+                    Width="50"
+                    Height="50"
+                    Margin="0,0,0,0"
+                    Source="/Resources/ballImgs/lifeBall.png" />
+                <TextBlock
+                    Grid.Row="2"
+                    Grid.Column="5"
+                    Margin="0,0,0,0"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    FontSize="24"
+                    Text="{Binding LifeBall}" />
+            </Grid>
+        </StackPanel>
+        <StackPanel
+            Grid.Row="2"
+            Grid.RowSpan="2"
+            Grid.Column="2"
+            Grid.ColumnSpan="2"
+            Margin="10">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*" />
+                    <RowDefinition Height="1*" />
+                    <RowDefinition Height="1*" />
+                </Grid.RowDefinitions>
+                <Image
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="3"
+                    Width="200"
+                    Height="100"
+                    Margin="10,0,0,0"
+                    Source="/Resources/logos/thunderballLogo.png" />
+
+                <TextBlock
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="5"
+                    Margin="10,0,0,10"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Center"
+                    FontSize="18"
+                    Text="{Binding ThunderDate}" />
+
+                <TextBlock
+                    Grid.Row="1"
+                    Grid.Column="4"
+                    Grid.ColumnSpan="2"
+                    Margin="20,0,0,10"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    FontSize="12"
+                    FontWeight="Bold"
+                    Text="THUNDERBALL" />
+                <Image
+                    Grid.Row="2"
+                    Grid.Column="0"
+                    Width="50"
+                    Height="50"
+                    Margin="0,0,0,0"
+                    Source="/Resources/ballImgs/Ball.png" />
+                <TextBlock
+                    Grid.Row="2"
+                    Grid.Column="0"
+                    Margin="0,0,0,0"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    FontSize="24"
+                    Text="{Binding ThunderBall1}" />
+                <Image
+                    Grid.Row="2"
+                    Grid.Column="1"
+                    Width="50"
+                    Height="50"
+                    Margin="0,0,0,0"
+                    Source="/Resources/ballImgs/Ball.png" />
+                <TextBlock
+                    Grid.Row="2"
+                    Grid.Column="1"
+                    Margin="0,0,0,0"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    FontSize="24"
+                    Text="{Binding ThunderBall2}" />
+                <Image
+                    Grid.Row="2"
+                    Grid.Column="2"
+                    Width="50"
+                    Height="50"
+                    Margin="0,0,0,0"
+                    Source="/Resources/ballImgs/Ball.png" />
+                <TextBlock
+                    Grid.Row="2"
+                    Grid.Column="2"
+                    Margin="0,0,0,0"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    FontSize="24"
+                    Text="{Binding ThunderBall3}" />
+                <Image
+                    Grid.Row="2"
+                    Grid.Column="3"
+                    Width="50"
+                    Height="50"
+                    Margin="0,0,0,0"
+                    Source="/Resources/ballImgs/Ball.png" />
+                <TextBlock
+                    Grid.Row="2"
+                    Grid.Column="3"
+                    Margin="0,0,0,0"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    FontSize="24"
+                    Text="{Binding ThunderBall4}" />
+                <Image
+                    Grid.Row="2"
+                    Grid.Column="4"
+                    Width="50"
+                    Height="50"
+                    Margin="0,0,0,0"
+                    Source="/Resources/ballImgs/Ball.png" />
+                <TextBlock
+                    Grid.Row="2"
+                    Grid.Column="4"
+                    Margin="0,0,0,0"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    FontSize="24"
+                    Text="{Binding ThunderBall5}" />
+                <Image
+                    Grid.Row="2"
+                    Grid.Column="5"
+                    Width="50"
+                    Height="50"
+                    Margin="0,0,0,0"
+                    Source="/Resources/ballImgs/thunderBall.png" />
+                <TextBlock
+                    Grid.Row="2"
+                    Grid.Column="5"
+                    Margin="0,0,0,0"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    FontSize="24"
+                    Text="{Binding ThunderBall}" />
+            </Grid>
+        </StackPanel>
+
+
+
+    </Grid>
 </UserControl>

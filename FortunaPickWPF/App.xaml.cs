@@ -1,4 +1,5 @@
-﻿using FortunaPickWPF.ViewModels;
+﻿using FortunaPickWPF.Helpers;
+using FortunaPickWPF.ViewModels;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -11,6 +12,9 @@ namespace FortunaPickWPF
         [STAThread]
         public static void Main(string[] args)
         {
+            // Try download results from Lotto HQ
+            DrawResults.DownloadUpdate();
+            // Call Dependancy Injection Setup
             MainAsync(args).GetAwaiter().GetResult();
         }
 

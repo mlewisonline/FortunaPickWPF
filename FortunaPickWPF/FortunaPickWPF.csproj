@@ -24,12 +24,12 @@
 		<None Remove="Resources\ballImgs\ThunderBall.png" />
 		<None Remove="Resources\BG.png" />
 		<None Remove="Resources\Logo.png" />
+		<None Remove="Resources\logos\euromillionsLogo.png" />
+		<None Remove="Resources\logos\lottoLogo.png" />
+		<None Remove="Resources\logos\setforlifeLogo.png" />
+		<None Remove="Resources\logos\thunderballLogo.png" />
 		<Page Include="App.xaml" />
 	</ItemGroup>
-	
-  <ItemGroup>
-    <Folder Include="Models\" />
-  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
@@ -48,6 +48,10 @@
     <Resource Include="Resources\BG.png" />
     <Resource Include="Resources\icon.ico" />
     <Resource Include="Resources\Logo.png" />
+    <Resource Include="Resources\logos\euromillionsLogo.png" />
+    <Resource Include="Resources\logos\lottoLogo.png" />
+    <Resource Include="Resources\logos\setforlifeLogo.png" />
+    <Resource Include="Resources\logos\thunderballLogo.png" />
   </ItemGroup>
 
 </Project>

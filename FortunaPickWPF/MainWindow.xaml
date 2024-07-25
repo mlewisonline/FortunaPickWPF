@@ -145,7 +145,7 @@
                 </TabItem.Header>
                 <views:DrawhistoryView x:Name="DrawhistoryView" >
                     <views:DrawhistoryView.Background>
-                        <ImageBrush ImageSource="/Resources/background.png"/>
+                        <ImageBrush ImageSource="/Resources/BG.png"/>
                     </views:DrawhistoryView.Background>
                 </views:DrawhistoryView>
 
