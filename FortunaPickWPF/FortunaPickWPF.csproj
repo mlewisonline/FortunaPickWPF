@@ -8,10 +8,15 @@
     <UseWPF>true</UseWPF>
     <StartupObject>FortunaPickWPF.App</StartupObject>
     <ApplicationIcon>Resources\icon.ico</ApplicationIcon>
+	<Company>mlewisonline</Company>
+	<Authors>Matthew Lewis</Authors>
+	<Product>FortunaPick</Product>
+	<Copyright>Copyright © 2024 Matthew Lewis</Copyright>
   </PropertyGroup>
 
 	<ItemGroup>
 		<ApplicationDefinition Remove="App.xaml" />
+		<None Remove="Resources\background.png" />
 		<None Remove="Resources\ballImgs\Ball.png" />
 		<None Remove="Resources\ballImgs\EuroBall.png" />
 		<None Remove="Resources\ballImgs\LifeBall.png" />
@@ -34,6 +39,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Resources\background.png" />
     <Resource Include="Resources\ballImgs\Ball.png" />
     <Resource Include="Resources\ballImgs\EuroBall.png" />
     <Resource Include="Resources\ballImgs\LifeBall.png" />

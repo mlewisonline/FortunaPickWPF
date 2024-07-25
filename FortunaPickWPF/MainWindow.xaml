@@ -143,7 +143,11 @@
                             TextWrapping="Wrap" />
                     </StackPanel>
                 </TabItem.Header>
-                <views:DrawhistoryView x:Name="DrawhistoryView" />
+                <views:DrawhistoryView x:Name="DrawhistoryView" >
+                    <views:DrawhistoryView.Background>
+                        <ImageBrush ImageSource="/Resources/background.png"/>
+                    </views:DrawhistoryView.Background>
+                </views:DrawhistoryView>
 
             </TabItem>
 
@@ -163,7 +167,11 @@
                             TextWrapping="Wrap" />
                     </StackPanel>
                 </TabItem.Header>
-                <views:BallstatsView x:Name="BallstatsView" />
+                <views:BallstatsView x:Name="BallstatsView" >
+                    <views:BallstatsView.Background>
+                        <ImageBrush ImageSource="/Resources/background.png"/>
+                    </views:BallstatsView.Background>
+                </views:BallstatsView>
 
             </TabItem>
 

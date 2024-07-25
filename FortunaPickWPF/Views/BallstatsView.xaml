@@ -12,7 +12,17 @@
     d:DesignHeight="450"
     d:DesignWidth="850"
     mc:Ignorable="d">
-    <Grid>
-        <TextBlock Text="STATS"/>
-    </Grid>
+    <StackPanel>
+        <StackPanel Height="280" Width="280">
+            <Image Source="/Resources/Logo.png" />
+        </StackPanel>
+        <TextBlock
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontFamily="Arial Rounded MT Bold"
+            FontSize="30"
+            Foreground="black"
+            Text="COMING SOON" />
+
+    </StackPanel>
 </UserControl>
