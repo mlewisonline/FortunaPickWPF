@@ -30,7 +30,9 @@ public partial class SetforlifeViewModel : ObservableObject
         List<int> lifeLine = [];
         List<int> mainBalls = [];
         List<int> lifeBalls = [];
-        Random random = new();
+
+        // Seed Random
+        Random random = new(Guid.NewGuid().GetHashCode());
 
         // Build main balls from 1 to 47.
         for (int i = 1; i < 48; i++)

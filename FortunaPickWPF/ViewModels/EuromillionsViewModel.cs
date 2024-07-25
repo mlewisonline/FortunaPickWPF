@@ -32,7 +32,9 @@ public partial class EuromillionsViewModel : ObservableObject
         List<int> euroline = [];
         List<int> mainBalls = [];
         List<int> luckyStars = [];
-        Random random = new();
+
+        // Seed Random
+        Random random = new(Guid.NewGuid().GetHashCode());
 
         // Build main balls from 1 to 50.
         for (int i = 1; i < 51; i++)

@@ -151,7 +151,7 @@
             IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
             Style="{StaticResource MaterialDesignRaisedButton}"
             ToolTip="Generate numbers">
-            <TextBlock Text="Generate EuroMillions" />
+            <TextBlock Text="Generate EuroMillions" Foreground="Black"/>
         </Button>
 
     </Grid>

@@ -29,7 +29,9 @@ public partial class LottoViewModel : ObservableObject
     {
         List<int> lottoLine = [];
         List<int> mainBalls = [];
-        Random random = new();
+
+        // Seed Random
+        Random random = new(Guid.NewGuid().GetHashCode());
 
         // Build main balls from 1 to 59.
         for (int i = 1; i < 60; i++)

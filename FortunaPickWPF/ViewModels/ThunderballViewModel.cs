@@ -30,7 +30,9 @@ public partial class ThunderballViewModel : ObservableObject
         List<int> thunderLine = [];
         List<int> mainBalls = [];
         List<int> tunderBalls = [];
-        Random random = new();
+
+        //Seed Random
+        Random random = new(Guid.NewGuid().GetHashCode());
 
         // Build main balls from 1 to 39.
         for (int i = 1; i < 40; i++)
