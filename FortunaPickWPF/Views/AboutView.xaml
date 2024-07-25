@@ -24,7 +24,7 @@
             FontFamily="Arial Rounded MT Bold"
             FontSize="30"
             Foreground="black"
-            Text="Version 1.0.0 ©️ 2004 Matthew Lewis" />
+            Text="Version 1.0.0 ©️ 2024 Matthew Lewis" />
 
 
         <TextBlock
