@@ -11,7 +11,7 @@
 	<Company>mlewisonline</Company>
 	<Authors>Matthew Lewis</Authors>
 	<Product>FortunaPick</Product>
-	<Copyright>Copyright ©2024 Matthew Lewis</Copyright>
+	<Copyright>Copyright © 2024 Matthew Lewis</Copyright>
   </PropertyGroup>
 
 	<ItemGroup>
