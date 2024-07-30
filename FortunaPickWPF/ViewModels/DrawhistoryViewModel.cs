@@ -89,7 +89,7 @@ public partial class DrawhistoryViewModel : ObservableObject
 
         euroDate = EuroMillionsResults[0].Date.ToString();
         EuroBall1 = EuroMillionsResults[0].Ball1;
-        EuroBall2 = EuroMillionsResults[0].Ball1;
+        EuroBall2 = EuroMillionsResults[0].Ball2;
         EuroBall3 = EuroMillionsResults[0].Ball3;
         EuroBall4 = EuroMillionsResults[0].Ball4;
         EuroBall5 = EuroMillionsResults[0].Ball5;
