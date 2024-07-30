@@ -205,7 +205,6 @@
                         <Button
                             HorizontalAlignment="Center"
                             Command="{Binding CloseCommand}"
-                            IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
                             Style="{StaticResource MaterialDesignFloatingActionMiniButton}"
                             ToolTip="MaterialDesignFloatingActionMiniButton">
                             <materialDesign:PackIcon

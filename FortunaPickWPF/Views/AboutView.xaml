@@ -13,9 +13,9 @@
     d:DesignWidth="850"
     mc:Ignorable="d">
 
- 
+
     <StackPanel>
-        <StackPanel Height="280" Width="280">
+        <StackPanel Width="280" Height="280">
             <Image Source="/Resources/Logo.png" />
         </StackPanel>
         <TextBlock
@@ -32,6 +32,6 @@
             FontWeight="DemiBold"
             Foreground="Black"
             Text="{Binding AboutText}"
-            TextAlignment="Center"/>
+            TextAlignment="Center" />
     </StackPanel>
 </UserControl>

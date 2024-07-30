@@ -140,7 +140,6 @@
                 materialDesign:ButtonAssist.CornerRadius="10"
                 Background="#e232d1"
                 Command="{Binding GetThunderLineCommand}"
-                IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
                 Style="{StaticResource MaterialDesignRaisedButton}"
                 ToolTip="Generate numbers">
                 <TextBlock Text="Generate ThunderBall " />
